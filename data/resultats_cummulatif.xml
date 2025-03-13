@@ -1,6 +1,6 @@
 <?xml version='1.0' standalone='no'?>
 <resultats_cummulatif>
-	<nov.2024_oct.2025>
+	<competition debut='Nov. 2024' fin='Oct. 2025'>
 		<mois name='Fev.2025'>
 			<participant>
 				<Nom>0251 - Gaetan Martel</Nom>
@@ -683,5 +683,5 @@
 				<Montant>116.5</Montant>
 			</ResultatTirage5050>
 		</mois>
-	</nov.2024_oct.2025>
+	</competition>
 </resultats_cummulatif>
