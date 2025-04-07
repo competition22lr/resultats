@@ -3,38 +3,56 @@
 	<competition debut='Nov. 2024' fin='Oct. 2025'>
 		<mois name='Mar.2025'>
 			<participant>
+				<Nom>0619 - Carl David Hoffman</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>12</Point_Boni>
+				<Pointage_Total>212</Pointage_Total>
+				<Classement>Platine</Classement>
+			</participant>
+			<participant>
 				<Nom>0251 - Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>11</Point_Boni>
 				<Pointage_Total>211</Pointage_Total>
-				<Classement>Platine</Classement>
+				<Classement>Or</Classement>
+			</participant>
+			<participant>
+				<Nom>0945 - Rene Beland</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+				<Classement>Argent</Classement>
 			</participant>
 			<participant>
 				<Nom>0138 - Robert Guilbault</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>4</Point_Boni>
 				<Pointage_Total>204</Pointage_Total>
-				<Classement>Or</Classement>
+				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Nom>0945 - Rene Beland</Nom>
 				<Pointage>198</Pointage>
 				<Point_Boni>5</Point_Boni>
 				<Pointage_Total>203</Pointage_Total>
-				<Classement>Argent</Classement>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>196</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Nom>0251 - Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>8</Point_Boni>
 				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0619 - Carl David Hoffman</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>10</Point_Boni>
+				<Pointage_Total>210</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0945 - Rene Beland</Nom>
@@ -318,57 +336,35 @@
 				<Point_Boni>8</Point_Boni>
 				<Pointage_Total>208</Pointage_Total>
 			</participant>
-			<ResultatTirage5050>
-				<Nom>Participation</Nom>
-				<Montant>0</Montant>
-			</ResultatTirage5050>
-		</mois>
-		<mois name='Jan.2025'>
 			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>11</Point_Boni>
-				<Pointage_Total>211</Pointage_Total>
-				<Classement>P</Classement>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>9</Point_Boni>
-				<Pointage_Total>209</Pointage_Total>
-				<Classement>1</Classement>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-				<Classement>2</Classement>
-			</participant>
-			<participant>
-				<Nom>0945 - Rene Beland</Nom>
-				<Pointage>190</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>191</Pointage_Total>
-				<Classement>3</Classement>
-			</participant>
-			<participant>
-				<Nom>0945 - Rene Beland</Nom>
-				<Pointage>184</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>186</Pointage_Total>
+				<Nom>0000 - Mario Gagnon</Nom>
+				<Pointage>176</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>176</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>1176 - Jean-Michel Cadieux</Nom>
-				<Pointage>170</Pointage>
+				<Pointage>113</Pointage>
 				<Point_Boni>0</Point_Boni>
-				<Pointage_Total>170</Pointage_Total>
+				<Pointage_Total>113</Pointage_Total>
 			</participant>
 			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>207</Pointage_Total>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0251 - Gaetan Martel</Nom>
@@ -377,560 +373,62 @@
 				<Pointage_Total>210</Pointage_Total>
 			</participant>
 			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>6</Point_Boni>
 				<Pointage_Total>206</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
+				<Pointage>200</Pointage>
+				<Point_Boni>11</Point_Boni>
+				<Pointage_Total>211</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
 				<Point_Boni>10</Point_Boni>
-				<Pointage_Total>209</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>9999 - dummy</Nom>
-				<Pointage>0</Pointage>
-				<Point_Boni>0</Point_Boni>
-				<Pointage_Total>0</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>207</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>197</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>9</Point_Boni>
-				<Pointage_Total>209</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>9</Point_Boni>
-				<Pointage_Total>209</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>202</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>197</Pointage>
-				<Point_Boni>9</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>207</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>9</Point_Boni>
-				<Pointage_Total>209</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>196</Pointage>
-				<Point_Boni>0</Point_Boni>
-				<Pointage_Total>196</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>196</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>198</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>202</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>202</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>0</Point_Boni>
-				<Pointage_Total>199</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>207</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>7</Point_Boni>
-				<Pointage_Total>207</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>202</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>199</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>196</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Pointage>196</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>198</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0138 - Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>5</Point_Boni>
-				<Pointage_Total>205</Pointage_Total>
+				<Pointage_Total>210</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0945 - Rene Beland</Nom>
-				<Pointage>181</Pointage>
-				<Point_Boni>0</Point_Boni>
-				<Pointage_Total>181</Pointage_Total>
+				<Pointage>194</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>196</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>198</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>197</Pointage_Total>
 			</participant>
 			<ResultatTirage5050>
-				<Nom>0624 - Charles Marchand</Nom>
-				<Montant>185.6</Montant>
+				<Nom>Participation</Nom>
+				<Montant>0</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Fev.2025'>
@@ -1615,41 +1113,651 @@
 				<Montant>116.5</Montant>
 			</ResultatTirage5050>
 		</mois>
-		<mois name='Dec.2024'>
+		<mois name='Jan.2025'>
 			<participant>
-				<Nom>0619 - Carl David Hoffman</Nom>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>11</Point_Boni>
+				<Pointage_Total>211</Pointage_Total>
+				<Classement>P</Classement>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
+				<Classement>1</Classement>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>8</Point_Boni>
 				<Pointage_Total>208</Pointage_Total>
-				<Classement>P</Classement>
+				<Classement>2</Classement>
+			</participant>
+			<participant>
+				<Nom>0945 - Rene Beland</Nom>
+				<Pointage>190</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>191</Pointage_Total>
+				<Classement>3</Classement>
+			</participant>
+			<participant>
+				<Nom>0945 - Rene Beland</Nom>
+				<Pointage>184</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>186</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>1176 - Jean-Michel Cadieux</Nom>
+				<Pointage>170</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>170</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0251 - Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
-				<Point_Boni>8</Point_Boni>
-				<Pointage_Total>208</Pointage_Total>
-				<Classement>P</Classement>
+				<Point_Boni>10</Point_Boni>
+				<Pointage_Total>210</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>10</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0138 - Robert Guilbault</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>6</Point_Boni>
 				<Pointage_Total>206</Pointage_Total>
-				<Classement>1</Classement>
+			</participant>
+			<participant>
+				<Nom>9999 - dummy</Nom>
+				<Pointage>0</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>0</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
 			</participant>
 			<participant>
 				<Nom>0624 - Charles Marchand</Nom>
 				<Pointage>199</Pointage>
 				<Point_Boni>5</Point_Boni>
 				<Pointage_Total>204</Pointage_Total>
-				<Classement>2</Classement>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>202</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>196</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>198</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>202</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>202</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>199</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>202</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>198</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Nom>0945 - Rene Beland</Nom>
+				<Pointage>181</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>181</Pointage_Total>
+			</participant>
+			<ResultatTirage5050>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Montant>185.6</Montant>
+			</ResultatTirage5050>
+		</mois>
+		<mois name='Dec.2024'>
+			<participant>
+				<Nom>0619 - Carl David Hoffman</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+				<Classement>Platine</Classement>
+			</participant>
+			<participant>
+				<Nom>0251 - Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
+				<Classement>Platine</Classement>
+			</participant>
+			<participant>
+				<Nom>0138 - Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+				<Classement>Or</Classement>
+			</participant>
+			<participant>
+				<Nom>0624 - Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+				<Classement>Argent</Classement>
 			</participant>
 			<participant>
 				<Nom>0945 - Rene Beland</Nom>
 				<Pointage>197</Pointage>
 				<Point_Boni>5</Point_Boni>
 				<Pointage_Total>202</Pointage_Total>
-				<Classement>3</Classement>
+				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Nom>1322 - Julie Tanguay</Nom>
@@ -2125,24 +2233,6 @@
 				<Point_Boni>1</Point_Boni>
 				<Pointage_Total>176</Pointage_Total>
 			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>200</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
-			</participant>
-			<participant>
-				<Nom>0251 - Gaetan Martel</Nom>
-				<Pointage>198</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
-			</participant>
 			<ResultatTirage5050>
 				<Nom>0251 - Gaetan Martel</Nom>
 				<Montant>87</Montant>
@@ -2152,37 +2242,37 @@
 			<participant>
 				<Nom>0251 - Gaeten Martel</Nom>
 				<Pointage>200</Pointage>
-				<Classement>1</Classement>
+				<Classement>Or</Classement>
 				<Participation>0251 - Gaeten Martel</Participation>
 			</participant>
 			<participant>
 				<Nom>0624 - Charles Marchand</Nom>
 				<Pointage>200</Pointage>
-				<Classement>1</Classement>
+				<Classement>Or</Classement>
 				<Participation>0251 - Gaeten Martel</Participation>
 			</participant>
 			<participant>
 				<Nom>0138 - Robert Guilbeault</Nom>
 				<Pointage>200</Pointage>
-				<Classement>1</Classement>
+				<Classement>Or</Classement>
 				<Participation>0251 - Gaeten Martel</Participation>
 			</participant>
 			<participant>
 				<Nom>0945 - Rene Beland</Nom>
 				<Pointage>197</Pointage>
-				<Classement>2</Classement>
+				<Classement>Argent</Classement>
 				<Participation>0251 - Gaeten Martel</Participation>
 			</participant>
 			<participant>
 				<Nom>0641 - Robert Langevin</Nom>
 				<Pointage>190</Pointage>
-				<Classement>3</Classement>
+				<Classement>Bronze</Classement>
 				<Participation>0251 - Gaeten Martel</Participation>
 			</participant>
 			<participant>
 				<Nom>1322 - Julie Tanguay</Nom>
 				<Pointage>190</Pointage>
-				<Classement>3</Classement>
+				<Classement>Bronze</Classement>
 				<Participation>0251 - Gaeten Martel</Participation>
 			</participant>
 			<participant>
