@@ -88,7 +88,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0945 - Rene Beland</Nom>
-				<Montant>50</Montant>
+				<Montant>71.5</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Fev.2025'>
@@ -1585,7 +1585,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0624 - Charles Marchand</Nom>
-				<Montant>185.6</Montant>
+				<Montant>100</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Dec.2024'>
