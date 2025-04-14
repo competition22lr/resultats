@@ -1,0 +1,28 @@
+<mat-sidenav-container class="example-container" style="height: 100vh;">
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar color="primary">Résultats mensuels</mat-toolbar>
+
+    <mat-form-field appearance="fill" class="w-full p-2">
+      <mat-label>Sélectionner un mois</mat-label>
+      <mat-select [(value)]="moisSelectionne" (selectionChange)="onMoisChange()">
+        <mat-option *ngFor="let mois of moisDispo" [value]="mois">
+          {{ mois }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-nav-list>
+      <mat-list-item *ngFor="let r of resultatsFiltres">
+        <div>
+          <strong>{{ r.nom }}</strong> — {{ r.total }} pts ({{ r.classement }})
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Contenu principal -->
+    <h1>Bienvenue !</h1>
+  </mat-sidenav-content>
+</mat-sidenav-container>
