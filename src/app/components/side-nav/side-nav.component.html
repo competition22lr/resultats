@@ -27,6 +27,7 @@
 
   <mat-sidenav-content>
     <!-- Contenu principal -->
+     
     <mat-toolbar color="primary" class="mobile-toolbar">
       <button mat-icon-button (click)="drawer.toggle()" class="mobile-toggle-button">
         <mat-icon>menu</mat-icon>
@@ -34,7 +35,6 @@
       <span>Résultats mensuels</span>
     </mat-toolbar>
 
-    <app-header></app-header>
     <mat-card *ngIf="participantSelectionne" class="mt-4"
       [style.backgroundColor]="getClassementColor(participantSelectionne.classement)">
       <mat-card-header>

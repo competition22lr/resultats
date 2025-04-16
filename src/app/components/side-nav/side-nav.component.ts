@@ -11,17 +11,13 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
-import { Participant } from '../../models/resultats.model';
-import { HeaderComponent } from "../header/header.component";
-
-
-
+import { Participant } from '../../models/participant.model';
 
 @Component({
   selector: 'app-side-nav',
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
-    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule, HeaderComponent],
+    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
   
@@ -33,6 +29,7 @@ export class SideNavComponent implements OnInit {
   resultats: Participant[] = [];
   resultatsFiltres: Participant[] = [];
   isMobile = false;
+  indexCompetitionSelectionne: number = 0;
 
   constructor(private resultatsService: ResultatsService, private breakpointObserver: BreakpointObserver) { }
 
@@ -43,7 +40,8 @@ export class SideNavComponent implements OnInit {
       });
 
     this.resultatsService.getResultats().subscribe(data => {
-      this.moisDispo = data.getMoisDisponibles();
+      this.moisDispo = data.getMoisDisponibles(this.indexCompetitionSelectionne);
+
       if (this.moisDispo.length > 0) {
         this.moisSelectionne = this.moisDispo[0];
         this.onMoisChange();
@@ -52,7 +50,7 @@ export class SideNavComponent implements OnInit {
   }
 
   onMoisChange(): void {
-    this.resultatsService.getParticipantsParMois(this.moisSelectionne).subscribe(resultats => {
+    this.resultatsService.getParticipantsParMois(this.indexCompetitionSelectionne,  this.moisSelectionne).subscribe(resultats => {
       this.resultats = resultats;
       this.resultatsFiltres = [...resultats];
     });

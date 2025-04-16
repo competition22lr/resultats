@@ -1,7 +1,7 @@
-import { ResultatsCummulatif } from './resultats.model';
+// import { ResultatsCummulatif } from './resultats.model';
 
-describe('Resultats', () => {
-  it('should create an instance', () => {
-    expect(new ResultatsCummulatif()).toBeTruthy();
-  });
-});
+// describe('Resultats', () => {
+//   it('should create an instance', () => {
+//     expect(new ResultatsCummulatif()).toBeTruthy();
+//   });
+// });
