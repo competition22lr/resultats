@@ -13,18 +13,40 @@
   flex-wrap: wrap;
 }
 
+.title-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+
+
 .logo {
   height: 100px;
   width: auto;
 }
 
-.title {
+/* .title {
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
   text-align: center;
   flex: 1;
-}
+} */
 
 /* Mobile mode : centrer tous les éléments verticalement */
 @media (max-width: 768px) {
@@ -46,5 +68,35 @@
 
   .title {
     margin-top: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive pour mobile */
+@media (max-width: 600px) {
+  .logo {
+    height: 40px;
+  }
+
+  .logo-right {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 }

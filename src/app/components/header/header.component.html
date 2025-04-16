@@ -1,15 +1,16 @@
 <mat-toolbar color="primary" class="header-toolbar">
     <div class="header-container">
         <!-- Logo gauche -->
-        <img [src]="resultatsService.imageLocationUrl + 'logoCompetition.jpg'" 
-     alt="logo Competition" class="logo" />
+        <img [src]="resultatsService.imageLocationUrl + 'logoCompetition.jpg'" alt="logo Competition" class="logo" />
 
         <!-- Titre centré -->
-        <h1 class="title">Compétition de tir de précision</h1>
-
+        <div class="title-container">
+            <h1 class="title">Compétition de tir de précision</h1>
+            <h3 class="subtitle">Club de Tir de l'Outaouais</h3>
+        </div>
 
         <!-- Logo droite (disparaît sur mobile) -->
-        <img [src]="resultatsService.imageLocationUrl + 'LogoClubDeTir.jpg'"
-            alt="logo club de tir" class="logo logo-right" />
+        <img [src]="resultatsService.imageLocationUrl + 'LogoClubDeTir.jpg'" alt="logo club de tir"
+            class="logo logo-right" />
     </div>
 </mat-toolbar>

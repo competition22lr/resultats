@@ -1,9 +1,13 @@
 <div class="classement-container">
-  <div *ngFor="let p of topParticipants; let i = index" class="trophy-card">
-    <img [src]="getTrophyImage(p.classement)" class="trophy-img" alt="{{p.classement}}" />
-    <div class="infos">
-      <div class="nom">{{ p.nom }}</div>
-      <div class="score">{{ p.total }} pts</div>
+  <h2 class="titre-mois">Classement - {{ moisSelectionne }}</h2>
+
+  <div class="trophees">
+    <div *ngFor="let p of topParticipants; let i = index" class="trophy-card">
+      <img [src]="getTrophyImage(p.classement)" class="trophy-img" alt="{{p.classement}}" />
+      <div class="infos">
+        <div class="nom">{{ p.nom }}</div>
+        <div class="score">{{ p.total }} pts</div>
+      </div>
     </div>
   </div>
 </div>

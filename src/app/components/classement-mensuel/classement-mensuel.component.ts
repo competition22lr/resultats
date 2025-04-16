@@ -11,6 +11,8 @@ import { ResultatsService } from '../../services/resultats.service';
 })
 export class ClassementMensuelComponent {
   @Input() participants: Participant[] = [];
+  @Input() moisSelectionne: string = '';
+
   constructor(public resultatsService: ResultatsService) { }
 
   get topParticipants() {

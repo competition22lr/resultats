@@ -35,7 +35,8 @@
       <span>Résultats mensuels</span>
     </mat-toolbar>
 
-    <app-classement-mensuel [participants]="resultats"></app-classement-mensuel>
+    <app-classement-mensuel [participants]="resultats"
+    [moisSelectionne]="moisSelectionne"></app-classement-mensuel>
 
     <!-- <mat-card *ngIf="participantSelectionne" class="mt-4"
       [style.backgroundColor]="getClassementColor(participantSelectionne.classement)">
