@@ -7,4 +7,8 @@ export class Participant {
     public total: number,
     public classement: string
   ) { }
+
+  aClassement(): boolean {
+    return this.classement?.trim() !== '';
+  }
 }

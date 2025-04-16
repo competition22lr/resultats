@@ -10,6 +10,8 @@ export class ResultatsService {
   private xmlUrl = 'https://raw.githubusercontent.com/competition22lr/resultats/main/data/resultats_cummulatif.xml';
   private cache: { timestamp: number, data: ResultatsCummulatif } | null = null;
   private CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
+  public imageLocationUrl: string = 'https://raw.githubusercontent.com/competition22lr/resultats/refs/heads/main/public/images/';
+
 
   constructor(private http: HttpClient) {}
 

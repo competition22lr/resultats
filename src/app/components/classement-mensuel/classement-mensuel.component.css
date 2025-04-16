@@ -1,0 +1,41 @@
+.classement-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .trophy-card {
+    background: #222;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 130px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px #0006;
+    transition: transform 0.2s;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .trophy-img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .infos {
+    margin-top: 0.5rem;
+  
+    .nom {
+      font-weight: bold;
+    }
+  
+    .score {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  }
+  

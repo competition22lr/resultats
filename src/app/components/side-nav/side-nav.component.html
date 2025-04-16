@@ -35,7 +35,9 @@
       <span>Résultats mensuels</span>
     </mat-toolbar>
 
-    <mat-card *ngIf="participantSelectionne" class="mt-4"
+    <app-classement-mensuel [participants]="resultats"></app-classement-mensuel>
+
+    <!-- <mat-card *ngIf="participantSelectionne" class="mt-4"
       [style.backgroundColor]="getClassementColor(participantSelectionne.classement)">
       <mat-card-header>
         <mat-card-title>{{ participantSelectionne.nom }}</mat-card-title>
@@ -47,6 +49,6 @@
         <p><strong>Bonus :</strong> {{ participantSelectionne.pointBoni }}</p>
         <p><strong>Total :</strong> {{ participantSelectionne.total }} pts</p>
       </mat-card-content>
-    </mat-card>
+    </mat-card> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

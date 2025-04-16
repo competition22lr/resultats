@@ -12,12 +12,13 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
 import { Participant } from '../../models/participant.model';
+import { ClassementMensuelComponent } from "../classement-mensuel/classement-mensuel.component";
 
 @Component({
   selector: 'app-side-nav',
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
-    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule],
+    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule, ClassementMensuelComponent],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
   
@@ -51,6 +52,7 @@ export class SideNavComponent implements OnInit {
 
   onMoisChange(): void {
     this.resultatsService.getParticipantsParMois(this.indexCompetitionSelectionne,  this.moisSelectionne).subscribe(resultats => {
+      
       this.resultats = resultats;
       this.resultatsFiltres = [...resultats];
     });

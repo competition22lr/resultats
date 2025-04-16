@@ -1,15 +1,15 @@
 <mat-toolbar color="primary" class="header-toolbar">
     <div class="header-container">
         <!-- Logo gauche -->
-        <img src="https://raw.githubusercontent.com/competition22lr/resultats/refs/heads/main/public/images/logoCompetition.jpg"
-            alt="logo Competition" class="logo" />
+        <img [src]="resultatsService.imageLocationUrl + 'logoCompetition.jpg'" 
+     alt="logo Competition" class="logo" />
 
         <!-- Titre centré -->
         <h1 class="title">Compétition de tir de précision</h1>
 
 
         <!-- Logo droite (disparaît sur mobile) -->
-        <img src="https://raw.githubusercontent.com/competition22lr/resultats/refs/heads/main/public/images/LogoClubDeTir.jpg"
+        <img [src]="resultatsService.imageLocationUrl + 'LogoClubDeTir.jpg'"
             alt="logo club de tir" class="logo logo-right" />
     </div>
 </mat-toolbar>
