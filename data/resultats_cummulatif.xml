@@ -3,40 +3,223 @@
 	<competition debut='Nov. 2024' fin='Oct. 2025'>
 		<mois name='Avr.2025'>
 			<participant>
-				<Numero_Membre>xxx1</Numero_Membre>
-				<Nom>Dummy1</Nom>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
+				<Point_Boni>13</Point_Boni>
+				<Pointage_Total>213</Pointage_Total>
 				<Classement>Platine</Classement>
 			</participant>
 			<participant>
-				<Numero_Membre>xxx2</Numero_Membre>
-				<Nom>Dummy2</Nom>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
 				<Pointage>200</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
 				<Classement>Or</Classement>
 			</participant>
 			<participant>
-				<Numero_Membre>xxx3</Numero_Membre>
-				<Nom>Dummy3</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>202</Pointage_Total>
+				<Numero_Membre>0624</Numero_Membre>
+				<Nom>Charles Marchand</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
 				<Classement>Argent</Classement>
 			</participant>
 			<participant>
-				<Numero_Membre>xxx4</Numero_Membre>
-				<Nom>Dummy4</Nom>
+				<Numero_Membre>0624-i</Numero_Membre>
+				<Nom>Mathys Appocher</Nom>
 				<Pointage>200</Pointage>
-				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+				<Classement>Argent</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>0945</Numero_Membre>
+				<Nom>Rene Beland</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
 				<Classement>Bronze</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>0619</Numero_Membre>
+				<Nom>Carl David Hoffman</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0624</Numero_Membre>
+				<Nom>Charles Marchand</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0624</Numero_Membre>
+				<Nom>Charles Marchand</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>199</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0624</Numero_Membre>
+				<Nom>Charles Marchand</Nom>
+				<Pointage>195</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>197</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>202</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>9</Point_Boni>
+				<Pointage_Total>209</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0624</Numero_Membre>
+				<Nom>Charles Marchand</Nom>
+				<Pointage>186</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>188</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0624</Numero_Membre>
+				<Nom>Charles Marchand</Nom>
+				<Pointage>149</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>150</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>12</Point_Boni>
+				<Pointage_Total>212</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>190</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>197</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>207</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0920-i</Numero_Membre>
+				<Nom>Zachary Lebel</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>199</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0920</Numero_Membre>
+				<Nom>Mathieu Patry</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>198</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>1415</Numero_Membre>
+				<Nom>Adam-Luc Belec</Nom>
+				<Pointage>180</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>182</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>1415</Numero_Membre>
+				<Nom>Adam-Luc Belec</Nom>
+				<Pointage>174</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>176</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0945</Numero_Membre>
+				<Nom>Rene Beland</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0624-i</Numero_Membre>
+				<Nom>Mathys Appocher</Nom>
+				<Pointage>195</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>199</Pointage_Total>
 			</participant>
 			<ResultatTirage5050>
 				<Nom>Participation</Nom>
-				<Montant/>
+				<Montant>0</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Mar.2025'>
