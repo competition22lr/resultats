@@ -1,0 +1,10 @@
+<div *ngIf="participant" class="participant-card">
+    <h3>{{ participant.nom }}</h3>
+    <ul>
+        <li><strong>Numéro:</strong> {{ participant.numero }}</li>
+        <li><strong>Pointage:</strong> {{ participant.pointage }}</li>
+        <li><strong>Point boni:</strong> {{ participant.pointBoni }}</li>
+        <li><strong>Total:</strong> {{ participant.total }}</li>
+        <li><strong>Classement:</strong> {{ participant.classement }}</li>
+    </ul>
+</div>
