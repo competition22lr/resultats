@@ -1075,7 +1075,7 @@
 				<Pointage>200</Pointage>
 				<Point_Boni>11</Point_Boni>
 				<Pointage_Total>211</Pointage_Total>
-				<Classement>P</Classement>
+				<Classement>Platine</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0624</Numero_Membre>
@@ -1083,7 +1083,7 @@
 				<Pointage>200</Pointage>
 				<Point_Boni>9</Point_Boni>
 				<Pointage_Total>209</Pointage_Total>
-				<Classement>1</Classement>
+				<Classement>Or</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0138</Numero_Membre>
@@ -1091,7 +1091,7 @@
 				<Pointage>200</Pointage>
 				<Point_Boni>8</Point_Boni>
 				<Pointage_Total>208</Pointage_Total>
-				<Classement>2</Classement>
+				<Classement>Argent</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0945</Numero_Membre>
@@ -1099,7 +1099,7 @@
 				<Pointage>190</Pointage>
 				<Point_Boni>1</Point_Boni>
 				<Pointage_Total>191</Pointage_Total>
-				<Classement>3</Classement>
+				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0945</Numero_Membre>
