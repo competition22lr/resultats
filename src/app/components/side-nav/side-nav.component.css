@@ -1,50 +1,79 @@
+::ng-deep mat-form-field {
+  width: 100%;
+}
+
+.example-container {
+   height: 100vh; /* // Assure que tout le container prend l'écran */
+}
+
+mat-sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.sidenav-content {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .side-nav {
-    width: 250px;
-    float: left;
-    padding: 1rem;
-    border-right: 1px solid #ddd;
-  }
-  
-  .side-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .side-nav li button {
-    background: none;
-    border: none;
-    padding: 0.5rem 0;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .refresh-btn {
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #2196f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .refresh-btn:hover {
-    background-color: #1976d2;
-  }
-  
+  width: 100%;
+  float: left;
+  padding: 1rem;
+  border-right: 1px solid;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav li button {
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.refresh-btn {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  background-color: #1976d2;
+}
+
+.mobile-toolbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .mobile-toolbar {
-    display: none;
+    display: flex;
+    align-items: center;
   }
-  
-  @media (max-width: 768px) {
-    .mobile-toolbar {
-      display: flex;
-      align-items: center;
-    }
-  
-    .mobile-toggle-button {
-      margin-right: 8px;
-    }
+
+  .mobile-toggle-button {
+    margin-right: 8px;
   }
-  
+
+  mat-sidenav {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}

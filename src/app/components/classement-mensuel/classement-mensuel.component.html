@@ -1,5 +1,5 @@
 <div class="classement-container">
-  <h2 class="titre-mois">Classement - {{ moisSelectionne }}</h2>
+  <h2 class="titre-mois">Classement - {{ moisSelectionne.name }}</h2>
 
   <div class="trophees">
     <div *ngFor="let p of topParticipants; let i = index" class="trophy-card">

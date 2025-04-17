@@ -1,25 +1,18 @@
-<mat-sidenav-container class="example-container" style="height: 100vh;">  
-  <mat-sidenav
-    #drawer
-    [mode]="isMobile ? 'over' : 'side'"
-    [opened]="!isMobile"
-    (closedStart)="participantSelectionne = null"
-  >
-    
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile">
 
-    <mat-form-field appearance="fill" class="w-full p-2">
-      <mat-label>Sélectionner un mois</mat-label>
-      <mat-select [(value)]="moisSelectionne" (selectionChange)="onMoisChange()">
-        <mat-option *ngFor="let mois of moisDispo" [value]="mois">
-          {{ mois }}
+    <mat-form-field appearance="fill" >
+      <mat-label>Sélectionner une compétition</mat-label>
+      <mat-select [(value)]="indexCompetitionSelectionne" (selectionChange)="onCompetitionChange($event.value)">
+        <mat-option *ngFor="let competition of competitionsDispo" [value]="competition">
+          {{ competition }}
         </mat-option>
       </mat-select>
     </mat-form-field>
 
     <mat-nav-list>
-      <mat-list-item *ngFor="let p of resultatsFiltres" (click)="onSelectParticipant(p)">
-        <span>{{ p.nom }}</span>
-        <span class="ml-auto">{{ p.total }} pts</span>
+      <mat-list-item *ngFor="let mois of moisDispo" (click)="onMoisChange(mois)">
+        <span>{{ mois.name }}</span>
       </mat-list-item>
     </mat-nav-list>
 
@@ -27,7 +20,7 @@
 
   <mat-sidenav-content>
     <!-- Contenu principal -->
-     
+
     <mat-toolbar color="primary" class="mobile-toolbar">
       <button mat-icon-button (click)="drawer.toggle()" class="mobile-toggle-button">
         <mat-icon>menu</mat-icon>
@@ -35,21 +28,7 @@
       <span>Résultats mensuels</span>
     </mat-toolbar>
 
-    <app-classement-mensuel [participants]="resultats"
-    [moisSelectionne]="moisSelectionne"></app-classement-mensuel>
+    <app-classement-mensuel [moisSelectionne]="moisSelectionne"></app-classement-mensuel>
 
-    <!-- <mat-card *ngIf="participantSelectionne" class="mt-4"
-      [style.backgroundColor]="getClassementColor(participantSelectionne.classement)">
-      <mat-card-header>
-        <mat-card-title>{{ participantSelectionne.nom }}</mat-card-title>
-        <mat-card-subtitle>Classement : {{ participantSelectionne.classement }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p><strong>Numéro :</strong> {{ participantSelectionne.numero }}</p>
-        <p><strong>Pointage :</strong> {{ participantSelectionne.pointage }}</p>
-        <p><strong>Bonus :</strong> {{ participantSelectionne.pointBoni }}</p>
-        <p><strong>Total :</strong> {{ participantSelectionne.total }} pts</p>
-      </mat-card-content>
-    </mat-card> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -4,6 +4,7 @@ import {  ResultatsCummulatif } from '../models/resultats-cummulatif.model';
 import { Participant } from '../models/participant.model';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { MoisResultats } from '../models/mois-resultats.model';
 
 @Injectable({ providedIn: 'root' })
 export class ResultatsService {
@@ -32,9 +33,16 @@ export class ResultatsService {
     );
   }
 
-  getParticipantsParMois(indexCompetitionSelectionne: number, mois: string): Observable<Participant[]> {
+  getParticipantsParMois(indexCompetitionSelectionne: number, mois: MoisResultats): Observable<Participant[]> {
     return this.getResultats().pipe(
       map(data => data.getParticipants(indexCompetitionSelectionne, mois))
+    );
+  }
+
+  
+  getMoisResultats(indexCompetitionSelectionne: number): Observable<MoisResultats[]> {
+    return this.getResultats().pipe( 
+      map(data => data.getMoisDisponibles(indexCompetitionSelectionne))
     );
   }
 }

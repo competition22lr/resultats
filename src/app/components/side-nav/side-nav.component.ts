@@ -11,8 +11,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
-import { Participant } from '../../models/participant.model';
 import { ClassementMensuelComponent } from "../classement-mensuel/classement-mensuel.component";
+import { MoisResultats } from '../../models/mois-resultats.model';
 
 @Component({
   selector: 'app-side-nav',
@@ -25,10 +25,10 @@ import { ClassementMensuelComponent } from "../classement-mensuel/classement-men
 })
 export class SideNavComponent implements OnInit {
   @ViewChild('drawer') drawer!: MatSidenav;
-  moisDispo: string[] = [];
-  moisSelectionne: string = '';
-  resultats: Participant[] = [];
-  resultatsFiltres: Participant[] = [];
+  competitionsDispo:string[] = [];
+  moisDispo: MoisResultats[] = [];
+  
+  moisSelectionne!: MoisResultats;
   isMobile = false;
   indexCompetitionSelectionne: number = 0;
 
@@ -41,40 +41,32 @@ export class SideNavComponent implements OnInit {
       });
 
     this.resultatsService.getResultats().subscribe(data => {
+      this.competitionsDispo = data.getCompetitionsDisponibles();
       this.moisDispo = data.getMoisDisponibles(this.indexCompetitionSelectionne);
 
       if (this.moisDispo.length > 0) {
         this.moisSelectionne = this.moisDispo[0];
-        this.onMoisChange();
+        this.onMoisChange(this.moisSelectionne);
       }
     });
   }
 
-  onMoisChange(): void {
-    this.resultatsService.getParticipantsParMois(this.indexCompetitionSelectionne,  this.moisSelectionne).subscribe(resultats => {
-      
-      this.resultats = resultats;
-      this.resultatsFiltres = [...resultats];
-    });
-  }
+onCompetitionChange(competitionSelectionnee: string) {
+  this.indexCompetitionSelectionne = this.competitionsDispo.indexOf(competitionSelectionnee);
 
-  participantSelectionne: Participant | null = null;
+  console.log('Compétition sélectionnée :', this.indexCompetitionSelectionne); 
+  this.resultatsService.getMoisResultats(this.indexCompetitionSelectionne).subscribe((_moisResultats: MoisResultats[])=>{
+    this.moisDispo =_moisResultats;
+    this.moisSelectionne = this.moisDispo[0];
+  });
+}
 
-  onSelectParticipant(participant: Participant): void {
-    this.participantSelectionne = participant;
+  onMoisChange(moisSelectionne:MoisResultats): void {   
+    this.moisSelectionne = moisSelectionne;
+
+    // Fermer le sidenav si on est en mode mobile
     if (this.isMobile && this.drawer) {
-      this.drawer.close(); // referme le menu après clic
+      this.drawer.close();
     }
   }
-
-  getClassementColor(classement: string): string {
-    switch (classement.toLowerCase()) {
-      case 'platine': return '#b3e5fc'; // bleu pâle
-      case 'or': return '#fff9c4';      // jaune pâle
-      case 'argent': return '#e0e0e0';  // gris clair
-      case 'bronze': return '#ffe0b2';  // orange pâle
-      default: return '#f5f5f5';        // fond neutre
-    }
-  }
-
 }
