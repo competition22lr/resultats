@@ -5,34 +5,46 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
 import { ClassementMensuelComponent } from "../classement-mensuel/classement-mensuel.component";
 import { MoisResultats } from '../../models/mois-resultats.model';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-side-nav',
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
-    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule, ClassementMensuelComponent],
+    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
+    ClassementMensuelComponent, RouterModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
-  
+
 })
 export class SideNavComponent implements OnInit {
   @ViewChild('drawer') drawer!: MatSidenav;
-  competitionsDispo:string[] = [];
+  competitionsDispo: string[] = [];
   moisDispo: MoisResultats[] = [];
-  
+  showClassement = true;
   moisSelectionne!: MoisResultats;
   isMobile = false;
   indexCompetitionSelectionne: number = 0;
 
-  constructor(private resultatsService: ResultatsService, private breakpointObserver: BreakpointObserver) { }
+  constructor(private resultatsService: ResultatsService,
+    private breakpointObserver: BreakpointObserver, private router: Router) {
+
+    // Écoute les changements de route
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.showClassement = !event.url.includes('/reglements');
+    });
+  }
 
   ngOnInit(): void {
     this.breakpointObserver.observe([Breakpoints.Handset])
@@ -51,17 +63,17 @@ export class SideNavComponent implements OnInit {
     });
   }
 
-onCompetitionChange(competitionSelectionnee: string) {
-  this.indexCompetitionSelectionne = this.competitionsDispo.indexOf(competitionSelectionnee);
+  onCompetitionChange(competitionSelectionnee: string) {
+    this.indexCompetitionSelectionne = this.competitionsDispo.indexOf(competitionSelectionnee);
 
-  console.log('Compétition sélectionnée :', this.indexCompetitionSelectionne); 
-  this.resultatsService.getMoisResultats(this.indexCompetitionSelectionne).subscribe((_moisResultats: MoisResultats[])=>{
-    this.moisDispo =_moisResultats;
-    this.moisSelectionne = this.moisDispo[0];
-  });
-}
+    console.log('Compétition sélectionnée :', this.indexCompetitionSelectionne);
+    this.resultatsService.getMoisResultats(this.indexCompetitionSelectionne).subscribe((_moisResultats: MoisResultats[]) => {
+      this.moisDispo = _moisResultats;
+      this.moisSelectionne = this.moisDispo[0];
+    });
+  }
 
-  onMoisChange(moisSelectionne:MoisResultats): void {   
+  onMoisChange(moisSelectionne: MoisResultats): void {
     this.moisSelectionne = moisSelectionne;
 
     // Fermer le sidenav si on est en mode mobile

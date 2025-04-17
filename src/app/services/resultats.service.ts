@@ -5,6 +5,7 @@ import { Participant } from '../models/participant.model';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MoisResultats } from '../models/mois-resultats.model';
+import { Competition } from '../models/competition.model';
 
 @Injectable({ providedIn: 'root' })
 export class ResultatsService {
@@ -33,12 +34,27 @@ export class ResultatsService {
     );
   }
 
-  getParticipantsParMois(indexCompetitionSelectionne: number, mois: MoisResultats): Observable<Participant[]> {
+  getParticipantsPourMois(indexCompetition: number, mois: string): Observable<Participant[]> {
     return this.getResultats().pipe(
-      map(data => data.getParticipants(indexCompetitionSelectionne, mois))
+      map(data => {
+        const comp = data.getCompetitions(indexCompetition);
+        const moisData = comp?.mois?.find(m => m.name.toLowerCase() === mois.toLowerCase());
+  
+        console.log('MoisData =>', moisData);
+  
+        return moisData?.participants || [];
+      })
     );
   }
+  
 
+  
+  getCompetition(indexCompetitionSelectionne: number): Observable<Competition> {
+    return this.getResultats().pipe(
+      map(data => data.getCompetitions(indexCompetitionSelectionne))
+    );
+  }
+  
   
   getMoisResultats(indexCompetitionSelectionne: number): Observable<MoisResultats[]> {
     return this.getResultats().pipe( 
