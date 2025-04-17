@@ -7,7 +7,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
-import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -36,7 +36,7 @@ export class SideNavComponent implements OnInit {
   indexCompetitionSelectionne: number = 0;
 
   constructor(private resultatsService: ResultatsService,
-    private breakpointObserver: BreakpointObserver, private router: Router) {
+    private breakpointObserver: BreakpointObserver, private route: ActivatedRoute, private router: Router) {
 
     // Écoute les changements de route
     this.router.events.pipe(
@@ -52,14 +52,21 @@ export class SideNavComponent implements OnInit {
         this.isMobile = result.matches;
       });
 
-    this.resultatsService.getResultats().subscribe(data => {
-      this.competitionsDispo = data.getCompetitionsDisponibles();
-      this.moisDispo = data.getMoisDisponibles(this.indexCompetitionSelectionne);
+    // Récupère les paramètres de l'URL
+    this.route.paramMap.subscribe(params => {
+      const competitionParam = params.get('competition');
+      this.indexCompetitionSelectionne = competitionParam ? +competitionParam : 0;
 
-      if (this.moisDispo.length > 0) {
-        this.moisSelectionne = this.moisDispo[0];
-        this.onMoisChange(this.moisSelectionne);
-      }
+      this.resultatsService.getResultats().subscribe(data => {
+        this.competitionsDispo = data.getCompetitionsDisponibles();
+
+        // Actualise les mois pour la compétition actuelle
+        this.moisDispo = data.getMoisDisponibles(this.indexCompetitionSelectionne);
+
+        if (this.moisDispo.length > 0) {
+          this.moisSelectionne = this.moisDispo[0];
+        }
+      });
     });
   }
 

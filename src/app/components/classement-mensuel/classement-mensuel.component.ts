@@ -23,41 +23,44 @@ export class ClassementMensuelComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.indexCompetitionSelectionne = Number(params.get('competition')) || 0;
-      this._moisSelectionne = params.get('mois') || '';
+      const paramCompetition = params.get('competition');
+      const paramMois = params.get('mois');
   
-      console.log("params.get('competition') =>", params.get('competition'));
-      console.log("params.get('mois') =>", params.get('mois'));
+      this.indexCompetitionSelectionne = paramCompetition !== null ? Number(paramCompetition)?Number(paramCompetition) :0 : 0;
+      this._moisSelectionne = paramMois !== null ? paramMois : '';
   
+      console.log("params.get('competition') =>", paramCompetition);
+      console.log("params.get('mois') =>", paramMois);
+  
+      console.log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
+      console.log("this._moisSelectionne =>", this._moisSelectionne);
+
+      // Charge la compétition
       this.resultatsService.getCompetition(this.indexCompetitionSelectionne).subscribe(competition => {
         this.competitionSelectionnee = competition;
   
-        // Cas où le mois est "mois" ou vide => on prend le premier disponible
-        if (this._moisSelectionne === '' || this._moisSelectionne.toLowerCase() === 'mois') {
-          this.moisSelectionne = this.competitionSelectionnee.mois[0];
-        } else {
-          this.moisSelectionne = this.competitionSelectionnee.mois.find(m =>
-            m.name.toLowerCase() === this._moisSelectionne.toLowerCase()
-          );
-        }
+        console.log("this.competitionSelectionnee =>", this.competitionSelectionnee);
+
+        // Fallback : si aucun mois dans l'URL ou s'il n'est pas trouvé, on prend le premier
+        this.moisSelectionne =
+          this.competitionSelectionnee.mois.find(m => m.name.toLowerCase() === this._moisSelectionne.toLowerCase()) ||
+          this.competitionSelectionnee.mois[0];
   
-        // Met à jour _moisSelectionne avec le vrai nom si trouvé
-        this._moisSelectionne = this.moisSelectionne?.name || '';
+        this._moisSelectionne = this.moisSelectionne.name;
   
-        console.log("Mois sélectionné =>", this._moisSelectionne);
+        console.log("mois sélectionné :", this.moisSelectionne);
   
-        // Appel des participants seulement une fois le mois trouvé
-        if (this._moisSelectionne) {
-          this.resultatsService
-            .getParticipantsPourMois(this.indexCompetitionSelectionne, this._moisSelectionne)
-            .subscribe((participants: Participant[]) => {
-              this.participants = participants;
-              console.log("Participants =>", this.participants);
-            });
-        }
+        // Ensuite on récupère les participants
+        this.resultatsService
+          .getParticipantsPourMois(this.indexCompetitionSelectionne, this._moisSelectionne)
+          .subscribe((_Participant: Participant[]) => {
+            this.participants = _Participant;
+            console.log("participants =>", this.participants);
+          });
       });
     });
   }
+  
   
 
   get topParticipants() {

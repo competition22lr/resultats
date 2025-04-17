@@ -4,7 +4,7 @@
     <mat-form-field appearance="fill">
       <mat-label>Sélectionner une compétition</mat-label>
       <mat-select [(value)]="indexCompetitionSelectionne" (selectionChange)="onCompetitionChange($event.value)">
-        <mat-option *ngFor="let competition of competitionsDispo" [value]="competition">
+        <mat-option *ngFor="let competition of competitionsDispo; let i = index" [value]="i">
           {{ competition }}
         </mat-option>
       </mat-select>
