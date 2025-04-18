@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ResultatsCummulatif } from '../models/resultats-cummulatif.model';
+import {  ResultatsCummulatif } from '../models/resultats-cummulatif.model';
 import { Participant } from '../models/participant.model';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MoisResultats } from '../models/mois-resultats.model';
-import { Competition } from '../models/competition.model';
 
 @Injectable({ providedIn: 'root' })
 export class ResultatsService {
@@ -15,7 +14,7 @@ export class ResultatsService {
   public imageLocationUrl: string = 'https://raw.githubusercontent.com/competition22lr/resultats/refs/heads/main/public/images/';
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getResultats(): Observable<ResultatsCummulatif> {
     const now = Date.now();
@@ -28,38 +27,21 @@ export class ResultatsService {
       map(xmlString => {
         const xml = new DOMParser().parseFromString(xmlString, 'text/xml');
         const data = ResultatsCummulatif.fromXml(xml);
-
         this.cache = { timestamp: now, data };
         return data;
       })
     );
   }
 
-
-  getParticipantsPourMois(indexCompetition: number, mois: string): Observable<Participant[]> {
+  getParticipantsParMois(indexCompetitionSelectionne: number, mois: MoisResultats): Observable<Participant[]> {
     return this.getResultats().pipe(
-      map(data => {
-        const comp = data.getCompetitions(indexCompetition);
-        const moisData = comp?.mois?.find(m => m.name.toLowerCase() === mois.toLowerCase());
-
-        console.log('MoisData =>', moisData);
-
-        return moisData?.participants || [];
-      })
+      map(data => data.getParticipants(indexCompetitionSelectionne, mois))
     );
   }
 
-
-
-  getCompetition(indexCompetitionSelectionne: number): Observable<Competition> {
-    return this.getResultats().pipe(
-      map(data => data.getCompetitions(indexCompetitionSelectionne))
-    );
-  }
-
-
+  
   getMoisResultats(indexCompetitionSelectionne: number): Observable<MoisResultats[]> {
-    return this.getResultats().pipe(
+    return this.getResultats().pipe( 
       map(data => data.getMoisDisponibles(indexCompetitionSelectionne))
     );
   }

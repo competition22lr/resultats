@@ -1,97 +1,82 @@
 .classement-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.titre-mois {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.aucun-message {
-  text-align: center;
-  color: #888;
-  font-style: italic;
-}
-
-
-.trophy-card-Diamant {
-  background: #A7BCBE;
-}
-
-.trophy-card-Platine {
-  background: #99A0A2;
-}
-
-.trophy-card-Or {
-  background: #DC9403;
-}
-
-.trophy-card-Argent {
-  background: #C0C0C0;
-}
-
-.trophy-card-Bronze {
-  background: #88540B;
-}
-
-.trophy-card {
-  /* background: #222; */
-  border-radius: 12px;
-  padding: 1rem;
-  width: 230px;
-  text-align: center;
-  color: black;
-  box-shadow: 0 0 10px #0006;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.05);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
   }
-}
-
-.trophy-img {
-  width: 160px;
-  height: auto;
-}
-
-.infos {
-  margin-top: 0.5rem;
-
-  .nom {
+  
+  .titre-mois {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     font-weight: bold;
+    color: #333;
+  }
+  
+  .aucun-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* 
+  Diamant #A7BCBE
+  Platine #99A0A2 
+  Or      #DC9403
+  Argent  #C0C0C0
+  Bronze  #88540B
+  */
+  
+  .trophy-card {
+    background: #222;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 230px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px #0006;
+    transition: transform 0.2s;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .trophy-img {
+    width: 160px;
+    height: auto;
+  }
+  
+  .infos {
+    margin-top: 0.5rem;
+  
+    .nom {
+      font-weight: bold;
+    }
+  
+    .score {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
   }
 
-  .score {
-    font-size: 0.9rem;
-    color: #260155;
+  .classement-container {
+    display: flex;
+    flex-direction: column; /* Important pour mettre le titre au-dessus */
+    align-items: center;
+    gap: 1rem; /* Un peu d’espace entre les éléments */
   }
-}
+  
+  .trophees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-.classement-container {
-  display: flex;
-  flex-direction: column;
-  /* Important pour mettre le titre au-dessus */
-  align-items: center;
-  gap: 1rem;
-  /* Un peu d’espace entre les éléments */
-}
-
-.trophees {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-
-
+  
+  
 /* Mobile mode : centrer tous les éléments verticalement */
 @media (max-width: 768px) {
 
@@ -101,7 +86,7 @@
     justify-content: center;
   }
 
-
+  
   .trophy-card {
     background: #222;
     border-radius: 12px;
@@ -111,24 +96,24 @@
     color: white;
     box-shadow: 0 0 10px #0006;
     transition: transform 0.2s;
-
+  
     &:hover {
       transform: scale(1.05);
     }
   }
-
+  
   .trophy-img {
     width: 60px;
     height: auto;
   }
-
+  
   .infos {
     margin-top: 0.5rem;
-
+  
     .nom {
       font-weight: bold;
     }
-
+  
     .score {
       font-size: 0.9rem;
       color: #ccc;
