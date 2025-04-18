@@ -20,7 +20,7 @@ import { filter } from 'rxjs';
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
     MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
-     RouterModule],
+    RouterModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
 
@@ -71,13 +71,13 @@ export class SideNavComponent implements OnInit {
 
   onCompetitionChange(index: number) {
     this.indexCompetitionSelectionne = index;
-  
+
     this.resultatsService.getMoisResultats(index).subscribe((_moisResultats: MoisResultats[]) => {
       this.moisDispo = _moisResultats;
-  
+
       if (this.moisDispo.length > 0) {
         this.moisSelectionne = this.moisDispo[0];
-  
+
         // 🔁 Redirige avec mois encodé (remplace les points par underscore)
         const moisEncoded = this.moisSelectionne.name.toLowerCase().replace(/\./g, '_');
         this.router.navigate(['/classement', index, moisEncoded]);
@@ -88,7 +88,7 @@ export class SideNavComponent implements OnInit {
   encodeMois(mois: string): string {
     return mois.toLowerCase().replace(/\./g, '_');
   }
-  
+
   onMoisChange(moisSelectionne: MoisResultats): void {
     this.moisSelectionne = moisSelectionne;
 
