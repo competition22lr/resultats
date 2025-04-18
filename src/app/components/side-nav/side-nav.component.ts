@@ -5,34 +5,45 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
+import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
-import { ClassementMensuelComponent } from "../classement-mensuel/classement-mensuel.component";
 import { MoisResultats } from '../../models/mois-resultats.model';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-side-nav',
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
-    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule, ClassementMensuelComponent],
+    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
+    RouterModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
-  
+
 })
 export class SideNavComponent implements OnInit {
   @ViewChild('drawer') drawer!: MatSidenav;
-  competitionsDispo:string[] = [];
+  competitionsDispo: string[] = [];
   moisDispo: MoisResultats[] = [];
-  
+  showClassement = true;
   moisSelectionne!: MoisResultats;
   isMobile = false;
   indexCompetitionSelectionne: number = 0;
 
-  constructor(private resultatsService: ResultatsService, private breakpointObserver: BreakpointObserver) { }
+  constructor(private resultatsService: ResultatsService,
+    private breakpointObserver: BreakpointObserver, private route: ActivatedRoute, private router: Router) {
+
+    // Écoute les changements de route
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.showClassement = !event.url.includes('/reglements');
+    });
+  }
 
   ngOnInit(): void {
     this.breakpointObserver.observe([Breakpoints.Handset])
@@ -40,28 +51,45 @@ export class SideNavComponent implements OnInit {
         this.isMobile = result.matches;
       });
 
-    this.resultatsService.getResultats().subscribe(data => {
-      this.competitionsDispo = data.getCompetitionsDisponibles();
-      this.moisDispo = data.getMoisDisponibles(this.indexCompetitionSelectionne);
+    // Récupère les paramètres de l'URL
+    this.route.paramMap.subscribe(params => {
+      const competitionParam = params.get('competition');
+      this.indexCompetitionSelectionne = competitionParam ? +competitionParam : 0;
+
+      this.resultatsService.getResultats().subscribe(data => {
+        this.competitionsDispo = data.getCompetitionsDisponibles();
+
+        // Actualise les mois pour la compétition actuelle
+        this.moisDispo = data.getMoisDisponibles(this.indexCompetitionSelectionne);
+
+        if (this.moisDispo.length > 0) {
+          this.moisSelectionne = this.moisDispo[0];
+        }
+      });
+    });
+  }
+
+  onCompetitionChange(index: number) {
+    this.indexCompetitionSelectionne = index;
+
+    this.resultatsService.getMoisResultats(index).subscribe((_moisResultats: MoisResultats[]) => {
+      this.moisDispo = _moisResultats;
 
       if (this.moisDispo.length > 0) {
         this.moisSelectionne = this.moisDispo[0];
-        this.onMoisChange(this.moisSelectionne);
+
+        // 🔁 Redirige avec mois encodé (remplace les points par underscore)
+        const moisEncoded = this.moisSelectionne.name.toLowerCase().replace(/\./g, '_');
+        this.router.navigate(['/classement', index, moisEncoded]);
       }
     });
   }
 
-onCompetitionChange(competitionSelectionnee: string) {
-  this.indexCompetitionSelectionne = this.competitionsDispo.indexOf(competitionSelectionnee);
+  encodeMois(mois: string): string {
+    return mois.toLowerCase().replace(/\./g, '_');
+  }
 
-  console.log('Compétition sélectionnée :', this.indexCompetitionSelectionne); 
-  this.resultatsService.getMoisResultats(this.indexCompetitionSelectionne).subscribe((_moisResultats: MoisResultats[])=>{
-    this.moisDispo =_moisResultats;
-    this.moisSelectionne = this.moisDispo[0];
-  });
-}
-
-  onMoisChange(moisSelectionne:MoisResultats): void {   
+  onMoisChange(moisSelectionne: MoisResultats): void {
     this.moisSelectionne = moisSelectionne;
 
     // Fermer le sidenav si on est en mode mobile

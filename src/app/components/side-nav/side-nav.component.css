@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .example-container {
    height: 100vh; /* // Assure que tout le container prend l'écran */
 }
