@@ -12,7 +12,6 @@ import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/ro
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
-import { ClassementMensuelComponent } from "../classement-mensuel/classement-mensuel.component";
 import { MoisResultats } from '../../models/mois-resultats.model';
 import { filter } from 'rxjs';
 
@@ -21,7 +20,7 @@ import { filter } from 'rxjs';
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
     MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
-    ClassementMensuelComponent, RouterModule],
+     RouterModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
 
@@ -70,16 +69,24 @@ export class SideNavComponent implements OnInit {
     });
   }
 
-  onCompetitionChange(competitionSelectionnee: string) {
-    this.indexCompetitionSelectionne = this.competitionsDispo.indexOf(competitionSelectionnee);
-
-    console.log('Compétition sélectionnée :', this.indexCompetitionSelectionne);
-    this.resultatsService.getMoisResultats(this.indexCompetitionSelectionne).subscribe((_moisResultats: MoisResultats[]) => {
+  onCompetitionChange(index: number) {
+    this.indexCompetitionSelectionne = index;
+  
+    this.resultatsService.getMoisResultats(index).subscribe((_moisResultats: MoisResultats[]) => {
       this.moisDispo = _moisResultats;
-      this.moisSelectionne = this.moisDispo[0];
+  
+      console.log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
+
+      if (this.moisDispo.length > 0) {
+        this.moisSelectionne = this.moisDispo[0];
+
+        console.log("this.moisSelectionne =>", this.moisSelectionne);
+  
+        // 🔁 Mise à jour de l'URL avec la nouvelle sélection
+        this.router.navigate(['/classement', index, this.moisSelectionne.name.toLowerCase()]);
+      }
     });
   }
-
   onMoisChange(moisSelectionne: MoisResultats): void {
     this.moisSelectionne = moisSelectionne;
 
