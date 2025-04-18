@@ -1,8 +1,8 @@
 <div class="classement-container">
-  <h2 class="titre-mois">Classement - {{ moisSelectionne?.name || 'Aucun mois sélectionné' }}</h2>
+  <h2 class="titre-mois">Classement - {{ moisSelectionne.name }}</h2>
 
   <div class="trophees">
-    <div *ngFor="let p of topParticipants; let i = index" class="trophy-card trophy-card-{{p.classement}}">
+    <div *ngFor="let p of topParticipants; let i = index" class="trophy-card">
       <img [src]="getTrophyImage(p.classement)" class="trophy-img" alt="{{p.classement}}" />
       <div class="infos">
         <div class="nom">{{ p.nom }}</div>
