@@ -36,30 +36,20 @@ export class ResultatsCummulatif {
     return new ResultatsCummulatif(competitions);
   }
 
-  getCompetitionsDisponibles(): string[] {
-    // this.competitions.push(new Competition("debut", "fin",
-    //   [
-    //     new MoisResultats("mois 1", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 2", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 3", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 4", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 5", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 6", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 7", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 8", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 9", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 10", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 11", [new Participant("xxxx", "test", 0, 0, 0, "")]),
-    //     new MoisResultats("mois 11", [new Participant("xxxx", "test", 0, 0, 0, "")])
-    //   ]));
+  getCompetitionsDisponibles(): string[] {   
     return this.competitions.map((c, i) => `Compétition ${i + 1} (${c.debut} → ${c.fin})`);
+  }
+
+  
+  getCompetitions(indexCompetition: number): Competition{
+    return this.competitions[indexCompetition];
   }
 
   getMoisDisponibles(indexCompetition: number): MoisResultats[] {
     return this.competitions[indexCompetition]?.mois ?? [];
   }
 
-  getParticipants(indexCompetition: number, mois: MoisResultats): Participant[] {
-    return this.competitions[indexCompetition]?.mois.find(m => m.name === mois.name)?.participants ?? [];
+  getParticipants(indexCompetition: number, moisName: string): Participant[] {
+    return this.competitions[indexCompetition]?.mois.find(m => m.name.toLowerCase() === moisName)?.participants ?? [];
   }
 }
