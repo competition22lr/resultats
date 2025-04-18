@@ -18,15 +18,17 @@ export class ResultatsCummulatif {
         const name = moisEl.getAttribute('name') ?? '';
         const participants = Array.from(moisEl.getElementsByTagName('participant')).map(p => {
           const get = (tag: string) => p.getElementsByTagName(tag)[0]?.textContent?.trim() ?? '';
-          return new Participant(
-            get('Numero_Membre'),
-            get('Nom'),
-            +get('Pointage'),
-            +get('Point_Boni'),
-            +get('Pointage_Total'),
-            get('Classement')
-          );
+
+          return new Participant({
+            numero: get('Numero_Membre'),
+            nom: get('Nom'),
+            pointage: +get('Pointage'),
+            pointBoni: +get('Point_Boni'),
+            total: +get('Pointage_Total'),
+            classement: get('Classement')
+          });
         });
+
         return new MoisResultats(name, participants);
       });
 
@@ -36,12 +38,11 @@ export class ResultatsCummulatif {
     return new ResultatsCummulatif(competitions);
   }
 
-  getCompetitionsDisponibles(): string[] {   
+  getCompetitionsDisponibles(): string[] {
     return this.competitions.map((c, i) => `Compétition ${i + 1} (${c.debut} → ${c.fin})`);
   }
 
-  
-  getCompetitions(indexCompetition: number): Competition{
+  getCompetitions(indexCompetition: number): Competition {
     return this.competitions[indexCompetition];
   }
 

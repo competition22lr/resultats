@@ -27,7 +27,9 @@ export class ClassementMensuelComponent implements OnInit {
       const paramMois = params.get('mois');
   
       this.indexCompetitionSelectionne = paramCompetition !== null ? Number(paramCompetition)?Number(paramCompetition) :0 : 0;
-      this._moisSelectionne = paramMois !== null ? paramMois : '';
+      // ✅ Décodage des underscores → points
+      this._moisSelectionne = paramMois !== null ? paramMois.replace(/_/g, '.') : '';
+
   
       console.log("params.get('competition') =>", paramCompetition);
       console.log("params.get('mois') =>", paramMois);

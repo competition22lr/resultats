@@ -6,6 +6,8 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MoisResultats } from '../models/mois-resultats.model';
 import { Competition } from '../models/competition.model';
+import { FakeCompetitionService } from '../mocks/fake-competition.service';
+
 
 @Injectable({ providedIn: 'root' })
 export class ResultatsService {
@@ -15,7 +17,7 @@ export class ResultatsService {
   public imageLocationUrl: string = 'https://raw.githubusercontent.com/competition22lr/resultats/refs/heads/main/public/images/';
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private fakeService: FakeCompetitionService) { }
 
   getResultats(): Observable<ResultatsCummulatif> {
     const now = Date.now();
@@ -28,6 +30,9 @@ export class ResultatsService {
       map(xmlString => {
         const xml = new DOMParser().parseFromString(xmlString, 'text/xml');
         const data = ResultatsCummulatif.fromXml(xml);
+
+        // 👉 Ajouter la compétition fake ici
+        // data.competitions = [...data.competitions, this.fakeService.getFakeCompetition()];
 
         this.cache = { timestamp: now, data };
         return data;

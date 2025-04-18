@@ -42,7 +42,6 @@
 }
 
 .trophy-card {
-  /* background: #222; */
   border-radius: 12px;
   padding: 1rem;
   width: 230px;
@@ -103,12 +102,11 @@
 
 
   .trophy-card {
-    background: #222;
     border-radius: 12px;
     padding: 1rem;
     width: 130px;
     text-align: center;
-    color: white;
+    color: black;
     box-shadow: 0 0 10px #0006;
     transition: transform 0.2s;
 
@@ -131,7 +129,7 @@
 
     .score {
       font-size: 0.9rem;
-      color: #ccc;
+      color: #260155;
     }
   }
 

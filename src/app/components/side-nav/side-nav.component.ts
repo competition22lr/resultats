@@ -75,18 +75,20 @@ export class SideNavComponent implements OnInit {
     this.resultatsService.getMoisResultats(index).subscribe((_moisResultats: MoisResultats[]) => {
       this.moisDispo = _moisResultats;
   
-      console.log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
-
       if (this.moisDispo.length > 0) {
         this.moisSelectionne = this.moisDispo[0];
-
-        console.log("this.moisSelectionne =>", this.moisSelectionne);
   
-        // 🔁 Mise à jour de l'URL avec la nouvelle sélection
-        this.router.navigate(['/classement', index, this.moisSelectionne.name.toLowerCase()]);
+        // 🔁 Redirige avec mois encodé (remplace les points par underscore)
+        const moisEncoded = this.moisSelectionne.name.toLowerCase().replace(/\./g, '_');
+        this.router.navigate(['/classement', index, moisEncoded]);
       }
     });
   }
+
+  encodeMois(mois: string): string {
+    return mois.toLowerCase().replace(/\./g, '_');
+  }
+  
   onMoisChange(moisSelectionne: MoisResultats): void {
     this.moisSelectionne = moisSelectionne;
 

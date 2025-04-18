@@ -12,7 +12,7 @@
 
     <mat-nav-list>
       <mat-list-item *ngFor="let mois of moisDispo"
-        [routerLink]="['/classement', indexCompetitionSelectionne, mois.name.toLowerCase()]"
+        [routerLink]="['/classement', indexCompetitionSelectionne, encodeMois(mois.name)]"
         (click)="isMobile && drawer.close()">
         <span>{{ mois.name }}</span>
       </mat-list-item>
@@ -35,7 +35,7 @@
       </button>
     </mat-toolbar>
 
-     <!-- Zone d'affichage pour les pages comme /reglements -->
+    <!-- Zone d'affichage pour les pages comme /reglements -->
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
